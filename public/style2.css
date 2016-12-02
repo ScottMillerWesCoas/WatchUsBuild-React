@@ -1,0 +1,265 @@
+body {
+    margin-top: 100px;
+    font-family: 'Exo 2', sans-serif;
+    background: url('https://static.pexels.com/photos/1139/black-and-white-city-skyline-buildings.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*html { 
+  background: url('https://res.cloudinary.com/wanderable/image/upload/v1424534497/k0p5ubkfqkm9ef6racny.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+#bg{
+  background-color: transparent; 
+}
+.container {
+  padding: 0 2.5%;
+}
+#header{
+    padding-left: 30px; 
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    color: #FAFAFA;
+     text-shadow: 1px 1px 1px #000;
+    font-size: 35pt;
+    float: left;
+
+}
+
+.pic{
+  width: 350px;
+}
+
+
+
+#content {
+    width: 320px;
+    height: 303px;
+    float: left; 
+    margin-left: 30px; 
+    margin-top: 50px; 
+
+}
+
+.word{
+  margin-top: -1%;
+  font-size: 110%; 
+}
+
+
+
+.highScore{
+  color: white;
+  margin-left: 10%; 
+}
+
+/*.scoreBoard{
+  margin-top: 5px; 
+  border: 2px solid blue;
+  border-radius: 10px; 
+  padding-top: -5px;
+  padding-bottom: 10px;
+  width: 30%;
+
+}*/
+
+
+
+
+#messages{
+    float: right;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    color: #000;
+     text-shadow: 1px 1px 1px #FAFAFA;
+    font-size: 35pt;
+}
+/*.wordArr{
+  border: 2px solid black;
+  border-radius: 10px; 
+  padding-top: -10px;
+  height: 70px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}*/
+
+.word2{
+  color: #FAFAFA;
+  font-size: 30px;
+  width: 250px;
+  padding-top: -10px;
+  padding-left: 5px; 
+
+}
+.wordUl{
+  list-style-type:none;
+}
+
+.box {
+    box-sizing: border-box;
+    opacity: .85;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; 
+    display: inline-block;
+    text-align: center; 
+    /*padding-top: 20px;*/ 
+    background: #99D6FF;
+    font-size: 30px; 
+    font-weight: bold; 
+    color: #FFF;
+}
+
+#button {
+    border: 1px solid black;
+}
+.wordTest {
+  width: 20%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 75%; 
+  
+
+}
+#wordCheck{
+  margin-top: -10%;
+  opacity: 0;
+  
+}
+
+.scoreBoard {
+  width: 20%;
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 75%; 
+}
+.wordArr {
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  font-size: 75%; 
+  top: 40%;
+  left: 5%;
+  background-color: transparent;
+  color: #FAFAFA;
+  min-height: 20%; 
+  text-shadow: 3px 3px 3px #000;
+}
+
+.submitButton{
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  font-size: 60%; 
+  top: 35%;
+  left: 5%;
+  background-color: #000;
+  color: #FAFAFA;
+  border:1px solid #FAFAFA; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;
+  padding: 10px 10px 10px 10px; 
+  text-decoration:none; 
+  display:inline-block;
+  font-weight:bold; 
+}
+
+.submitButton:hover{
+  background-color: #FAFAFA;
+  color: #000;
+  font-size: 60%; 
+  border:1px solid #000; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; 
+  padding: 10px 10px 10px 10px; 
+  text-decoration:none; 
+  display:inline-block;
+}
+
+.submitButton:focus {
+  outline:0;
+}
+
+.refreshButton{
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  font-size: 60%; 
+  top: 70%;
+  left: 5%;
+  background-color: #FAFAFA;
+  color: #000;
+  border:1px solid #F00; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;
+  padding: 10px 10px 10px 10px; 
+  text-decoration:none; 
+  display:inline-block;
+  font-weight:bold; 
+}
+
+.refreshButton:hover{
+  background-color: #000;
+  color: #FAFAFA;
+  font-size: 60%; 
+  border:1px solid #F00; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; 
+  padding: 10px 10px 10px 10px; 
+  text-decoration:none; 
+  display:inline-block;
+}
+
+.refreshButton:focus {
+  outline:0;
+}
+
+.refreshButton[title]:hover:after {
+  content: 'Be careful!  This will erase your score, too!';
+  padding: 4px 8px;
+  color: #FFf;
+  position: absolute;
+  left: 20%;
+  top: 120%;
+  white-space: nowrap;
+  z-index: 20px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-image: -moz-linear-gradient(top, #345, #000);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #345),color-stop(1, #000));
+  background-image: -webkit-linear-gradient(top, #345, #000);
+}
+.clearButton{
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  font-size: 60%; 
+  top: 85%;
+  left: 5%;
+  background-color: #000;
+  color: #FAFAFA;
+  border:1px solid #FAFAFA; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;
+  padding: 10px 10px 10px 10px; 
+  text-decoration:none; 
+  display:inline-block;
+  font-weight:bold; 
+}
+
+.clearButton:hover{
+  background-color: #FAFAFA;
+  color: #000;
+  font-size: 60%; 
+  border:1px solid #000; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; 
+  padding: 10px 10px 10px 10px; 
+  text-decoration:none; 
+  display:inline-block;
+}
+
+.clearButton:focus {
+  outline:0;
+}
+
